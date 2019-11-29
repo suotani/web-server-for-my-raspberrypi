@@ -8,6 +8,6 @@ class Api::WeathersController < ApplicationController
   def new
     text = Weather.get_data
     Weather.create(text: text)
-    render json: {message: success}
+    render json: {message: "success"}
   end
 end
